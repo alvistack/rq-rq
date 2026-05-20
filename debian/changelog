@@ -1,0 +1,5 @@
+python-rq (100:2.9.0-1) UNRELEASED; urgency=medium
+
+  * https://github.com/rq/rq/releases/tag/v2.9
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Wed, 20 May 2026 15:45:53 +0800
