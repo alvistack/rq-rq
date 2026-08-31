@@ -1,0 +1,51 @@
+from setuptools import setup
+
+setup(
+    name='rq',
+    version='2.12.0',
+    description='RQ is a simple, lightweight, library for creating background jobs, and processing them.',
+    author_email='Selwin Ong <selwin.ong@gmail.com>, Vincent Driessen <vincent@3rdcloud.com>',
+    maintainer='Selwin Ong',
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Intended Audience :: End Users/Desktop',
+        'Intended Audience :: Information Technology',
+        'Intended Audience :: Science/Research',
+        'Intended Audience :: System Administrators',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: MacOS',
+        'Operating System :: POSIX',
+        'Operating System :: Unix',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Programming Language :: Python :: 3.14',
+        'Topic :: Internet',
+        'Topic :: Scientific/Engineering',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: System :: Distributed Computing',
+        'Topic :: System :: Monitoring',
+        'Topic :: System :: Systems Administration',
+    ],
+    install_requires=[
+        'click>=5',
+        'redis!=6,>=3.5',
+    ],
+    entry_points={
+        'console_scripts': [
+            'rq = rq.cli:main',
+            'rqinfo = rq.cli:info',
+            'rqworker = rq.cli:worker',
+        ],
+    },
+    packages=[
+        'rq',
+        'rq.cli',
+        'rq.contrib',
+        'rq.worker',
+    ],
+)
