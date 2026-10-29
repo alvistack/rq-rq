@@ -1,0 +1,5 @@
+python-rq source: file-without-copyright-information
+python-rq source: no-debian-changes
+python-rq source: source-contains-prebuilt-windows-binary
+python-rq source: source-is-missing
+python-rq source: source-package-encodes-python-version

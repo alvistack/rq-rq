@@ -1,0 +1,4 @@
+python3-rq: copyright-without-copyright-notice
+python3-rq: initial-upload-closes-no-bugs
+python3-rq: no-manual-page
+python3-rq: zero-byte-file-in-doc-directory
